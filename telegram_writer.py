@@ -1,4 +1,4 @@
-import pika
+﻿import pika
 import telebot
 import logging
 
@@ -48,7 +48,7 @@ def handle_delivery(channel, method, header, body):
             bot.send_message(chat_id, "Actualización del track " + track + "\n - " + str(actualizacion))
             logging.info("Datos enviados")
         except Exception as e:
-            logging.error("Error al enviar los datos: " + e)
+            logging.error("Error al enviar los palomos: " + e)
 
 
 # Función principal del escritor
