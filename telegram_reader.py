@@ -62,7 +62,7 @@ def enviar_lista(message):
     if (tracks == None):
         texto = "No dispone de trackings registrados"
     else:
-        texto = "\U0001F426Su lista de trackings\U0001F426\n"
+        texto = "\U0001F4E6Su lista de trackings\U0001F4E6\n"
         for item in tracks:
             texto += "-  \U0001F4E6 " + item[0] + "\n         "
             texto += mysql_config.obtener_ultimo_estado(item[0])
